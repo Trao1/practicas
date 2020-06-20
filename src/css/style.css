@@ -1,0 +1,118 @@
+body,html{
+  padding: 0px;
+  margin: 0px;
+}
+/*
+  # Los cambios anteriores es para eliminar los margenes y rellenos por defecto
+  # Es una buena practica resetear los estilos por defectos aplicados por el navegador
+  # Se vera de lleno despues
+*/
+
+
+/* Se trabaja bastante ordenado cuando se marca el inicio y el fin de los estilos de cierto bloque */
+
+
+/* NAVBAR START */
+
+.navbar{
+  margin: 0px;
+  padding: 2rem .2rem;
+  background: rgba(0,0,0,.02);  /* background es una forma general de aplicar todas las propiedades individuales (luego se veran) */
+  box-shadow: 1px 1px 5px -1px rgba(0,0,0,.2);
+}
+
+.menu{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  -ms-display: flex; /* Prefijo -sm- da compatibilidad con internet explore */
+  -webkit-display: flex; /* Prefijo -webkit- da compatibilidad con safari y chrome */
+  -moz-display: flex; /* prefijo -moz- da compatibilidad con mozilla */
+}
+/*
+  # Los prefijos se usan porque aun algunos navegadores no adaptan los nuevos estilos de css3, esto en un futuro puede quedar defazado.
+  # En algunos navegadores ya el prefijo para ciertas PROPIEDADES no se usa, por eso siempre se coloca primero la propiedades sin prefijo
+    y luego con prefijos. en la propiedad display se colocan para flex y grid
+*/
+
+.menu-item a{
+  background: transparent;
+  display: block;
+  padding: .6rem 1.5rem;
+  margin: 0rem 1rem;
+  text-decoration: none;
+  transition:linear background .2s;
+}
+.menu-item a:hover{
+  background: rgba(0,0,0,.04);
+}
+
+
+/* NAVBAR END */
+
+
+.container{
+  max-width: 1000px;
+  margin: 0px auto;
+
+}
+
+.section{
+  display: flex;
+  -ms-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.block {
+  width: 240px;
+  display: inline-block;
+  margin: .2rem;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,.2);
+}
+a.btn{
+  text-decoration: none;
+}
+
+
+.btn{
+  display: inline-block;
+  margin: .5rem 0rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 1px 1px rgba(0,0,0,.2);
+}
+.btn:active{
+  transform: scale(1.01);
+}
+.btn-primary{
+  background: blue;
+  color: white;
+}
+
+.flex{
+  display: flex;
+  -ms-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.main{
+  width: 65%;
+}
+.sidebar {
+  width: 35%;
+}
+.sticky-top{
+  position: sticky;
+  top: 10px;
+}

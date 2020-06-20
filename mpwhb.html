@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Margenes, Relleno, Ancho, Alto y Sombras</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/mpwhb.css">
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="flex">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html">Casa</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+
+
+    <div class="container">
+      <div class="flex">
+        <div class="main">
+          <div>
+            <h2 id="AnchoAlto">Ancho y Alto</h2>
+            <p>La Propiedad width(ancho) sirve para dar anchos de paginas, acepta valores numericos en px, em, rem, vw, %</p>
+            <p>La propiedad height(alto) srive para dar altura, acepta valores numericos en px, em, rem, vh, %</p>
+            <ul>
+              <li>
+                <span>NO ACEPTAN VALORES NEGATIVOS</span>
+              </li>
+              <li>
+                <a href="https://cybmeta.com/em-y-rem">Agrego explicacion de unidade px, em, rem, %</a>
+              </li>
+              <li>
+                <a href="https://devcode.la/tutoriales/unidades-vh-vw-css/">Agrego unidades vh y vw</a>
+              </li>
+            </ul>
+            <p>Tener en cuenta el uso correcto de las unidades vh y vw. Tambien rem y em el cual estos dos aparentemente se parecen pero son distintos en ciertas circustancias.</p>
+
+            <div class="caja-1">
+              <span>width: 100px </span><br>
+              <span>height: 100px  </span>
+            </div>
+
+            <br>
+
+            <div class="caja-2">
+              <span>width: 6.25rem </span><br>
+              <span>height: 6.25rem  </span>
+            </div>
+
+            <br>
+
+            <div class="caja-3">
+              <span>width: 6.25em </span><br>
+              <span>height: 6.25em  </span>
+            </div>
+
+            <br>
+
+            <div class="caja-4">
+              <span>width: 50% </span><br>
+              <span>height: 50%  </span>
+            </div>
+
+            <br>
+
+            <div class="caja-5">
+              <span>width: 30vw </span><br>
+              <span>height: 30vh  </span>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <br>
+
+          <div>
+            <h2 id="RellenoMargen">Relleno y Margen</h2>
+            <p>La Propiedad padding(relleno) Sirve para rellenar una caja "aparentemente la caja se ve mas grande", acepta valores numericos en px, em, rem, %.</p>
+            <p>La propiedad margin(margen) sirve dar margenes "aparentemente la caja se ve mas peque?a", acepta valores numericos en px, em, rem, %</p>
+            <ul>
+              <li>
+                <span>PADDING NO ACEPTA VALORES NEGATIVOS</span>
+              </li>
+              <li>
+                <span>MARGIN ACEPTA VALORES NEGATIVOS</span>
+              </li>
+            </ul>
+
+            <h3 id="EA1">Efectos aparentes</h3>
+            <p>Los efectos se hacen con una superposicion de dos cajas. para <strong>padding</strong> la caja principal sera la blaco, esta tendra el tama?o original. para <strong>margin</strong> la caja principal sera la negra, esta tendra el tama?o original.</p>
+            <h3>Padding</h3>
+            <span>Con padding</span>
+            <ul>
+              <li>El ancho se ve afectado asi: ancho + paddingX</li>
+              <li>El alto se ve afectado asi: alto + paddingY</li>
+            </ul>
+
+            <span>Con margin</span>
+            <ul>
+              <li>Da un efecto de superposicion manteniendo los anchos</li>
+            </ul>
+            <div class="caja-con-padding-1">
+              <div class="caja-sin-padding-1">
+                padding: 20px;
+              </div>
+            </div>
+
+            <p>El relleno es la parte amarilla. existe rellenos individuales si descomponemos el padding visto anteriormente quedaria asi.</p>
+            <ul>
+              <li>padding-top: 20px;</li>
+              <li>padding-right: 20px;</li>
+              <li>padding-bottom: 20px;</li>
+              <li>padding-left: 20px;</li>
+            </ul>
+            <p>padding se reduce asi: padding: top right bottom left</p>
+
+            <div class="caja-con-padding-2">
+              <div class="caja-sin-padding-2">
+                padding: 20px 10px 30px 40px;
+              </div>
+            </div>
+
+            <ul>
+              <li>padding-top: 20px;</li>
+              <li>padding-right: 10px;</li>
+              <li>padding-bottom: 30px;</li>
+              <li>padding-left: 40px;</li>
+            </ul>
+
+            <h3>Margin</h3>
+
+            <p>Margin tiene las mismas caracteristicas de padding, pero en vez de un aumneto de caja se ve una disminucion. Cuando se aplica margenes negativos se observa un aumento.</p>
+
+            <div class="caja-sin-margin-1">
+              Caja original
+            </div>
+
+            <div class="caja-sin-margin-1">
+              <div class="caja-con-margin-1">
+                margin: 20px;
+              </div>
+            </div>
+
+            <ul>
+              <li>margin-top: 20px;</li>
+              <li>margin-right: 20px;</li>
+              <li>margin-bottom: 20px;</li>
+              <li>margin-left: 20px;</li>
+            </ul>
+
+            <div class="caja-sin-margin-2">
+              Caja original
+            </div>
+
+            <div class="caja-sin-margin-2">
+              <div class="caja-con-margin-2">
+                margin: 10px 20px 30px 40px;
+              </div>
+            </div>
+
+            <ul>
+              <li>margin-top: 10px;</li>
+              <li>margin-right: 20px;</li>
+              <li>margin-bottom: 30px;</li>
+              <li>margin-left: 40px;</li>
+            </ul>
+
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="">
+              <h2 id="sombras">Sombras</h2>
+              <p>Da una sombra a las cajas, acepta hasta 5 parametros que pueden ser usados de la siguiente manera.</p>
+              <ul>
+                <li>box-shadow: none;</li>
+                <li>box-shadow: Desplazamiento-en-X  Desplazamiento-en-Y  Color;</li>
+                <li>box-shadow: Desplazamiento-en-X  Desplazamiento-en-Y  Difuminado Color;</li>
+                <li>box-shadow: Desplazamiento-en-X  Desplazamiento-en-Y  Difuminado Ancho Color;</li>
+                <li>box-shadow: Inset Desplazamiento-en-X  Desplazamiento-en-Y  Difuminado Ancho Color;</li>
+              </ul>
+
+              Desplazamiento-en-X y Desplazamiento-en-Y sus valores deben ser en px, em o rem . ACEPTA VALORES NEGATIVOS
+              <br>Desplazamiento-en-X : la sombra se desplazan en X
+              <br>Desplazamiento-en-Y : la sombra se desplazan en Y
+              <br>Difuminado : da un difuminado a la sombra, haciendola mas opaca y mas realista. Sus valores deben ser px, em o rem. NO ACEPTA NEGATIVOS
+              <br>Angcho: define el tama?o de la sombra, Valores en px em o rem. Valores NEGATIVOS haran que la sombra se reduzca, y valores POSITIVOS se expanda
+              <br>Inset: orienta la sombra externa a una sombra interna de la caja. ideal para dar biselados.
+
+
+              <div class="box-1">
+                  box-shadow: 5px 10px 5px black;
+              </div>
+              <br>
+              <div class="box-2">
+                box-shadow: -5px -10px 5px black;
+              </div>
+              <br>
+              <div class="box-3">
+                <br>
+                box-shadow: inset 5px 10px 5px black;
+              </div>
+              <br>
+              <div class="box-4">
+                box-shadow: inset -5px -10px 5px black;
+              </div>
+              <br>
+              <br><br><br><br><br>
+              <div class="box-5">
+                box-shadow: 1px 1px 100px 10px black;
+              </div>
+
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sticky-top">
+            <div style="padding:30px">
+              <h4>Secciones</h4>
+              <ul>
+                <li>
+                  <a href="#AnchoAlto">Ancho y Alto</a>
+                </li>
+                <li>
+                  <a href="#RellenoMargen">Relleno y Margen</a>
+                </li>
+                <li>
+                  <a href="#sombras">Sombras</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+<br><br><br><br><br>
+
+  </body>
+</html>
