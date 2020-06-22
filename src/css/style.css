@@ -17,7 +17,7 @@ body,html{
 .navbar{
   margin: 0px;
   padding: 2rem .2rem;
-  background: rgba(0,0,0,.02);  /* background es una forma general de aplicar todas las propiedades individuales (luego se veran) */
+  background: rgba(1,244,277,.10);  /* background es una forma general de aplicar todas las propiedades individuales (luego se veran) */
   box-shadow: 1px 1px 5px -1px rgba(0,0,0,.2);
 }
 
@@ -93,7 +93,7 @@ a.btn{
   transform: scale(1.01);
 }
 .btn-primary{
-  background: blue;
+  background: green;
   color: white;
 }
 
