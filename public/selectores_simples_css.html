@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link  rel="icon"   href="favicon.ico">
+
+    <title>Practicas</title>
+
+    <link rel="stylesheet" href="./dist/css/app.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+
+
+
+    <!-- Import prism -->
+    <link rel="stylesheet" href="./dist/css/prism.css">
+    <!-- Import material ico -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+
+  </head>
+  <body>
+
+
+    <div id="app">
+      <p-navbar></p-navbar>
+      <br>
+      <br>
+      <div class="container">
+
+        <div class="columns is-multiline ">
+          <div class="column is-8 is-full-mobile">
+            <div class="hero is-white" style="box-shadow: 0 0 1px rgba(0,0,0,.15);padding:1rem;">
+              <h1 class="title">SELECTORES SIMPLES CSS</h1>
+              <hr>
+              <p>Los selectores en <span class="tag is-info">css</span> lo entenderemos como un <strong>identificador</strong> para una o un grupo de etiquetas html, el cual va a permitirnos darle estilos y poder crear una pagina web llamativa.</p>
+              <br>
+              <p>Existen varios tipos de selectores.</p>
+              <br>
+              <ul class="menu-list" style="margin-left:1rem;">
+                <li>Selectores simple <b-icon icon="check"></b-icon></li>
+                <li>Selectores compuestos</li>
+                <li>Selectores complejos</li>
+              </ul>
+              <br>
+
+              <h2 id="selectores_simples" class="subtitle" style="font-weight:bold;">Selectores simples</h2>
+              <p>
+                Este tipo de selectores lo forman aquellos que solo tienen una cadena contextual, sin niguna combinacion.
+                Para empezar se veran los selectores de "etiqueta", "clase", "id".
+              </p>
+<pre><code class="language-css"><< etiqueta, clase, id >> {
+    color:red;
+}
+</code></pre>
+              <br>
+              <h2 id="selector_etiqueta" class="subtitle" style="font-weight:bold">Selector de etiqueta</h2>
+              <p>
+                Este tipo de selector hace referencia a las etiqueta html
+              </p>
+
+              <pre><code class="language-html">&#60;!-- HTML --&#62;
+&#60;p&#62;Texto en una etiqueta p&#60;/p&#62;</code></pre>
+
+              <pre><code class="language-css">/* CSS */
+p {
+  color:red;
+}</code></pre>
+
+            <pre><code><span style="color:black;">RESULTADO</span>
+              <p style="color:red">Texto en una etiqueta p</p></code></pre>
+
+
+              <br>
+              <h2 id="selector_clase" class="subtitle" style="font-weight:bold">Selector de clases</h2>
+              <p>Este tipo de selectores hace referencia a un valor del atributo class en etiquetal html, estas comienzan con un punto concatenada al valor.</p>
+              <pre><code class="language-html">&#60;!-- HTML --&#62;
+&#60;p&#62;Texto que no posee el atributo class&#60;/p&#62;
+&#60;p class="miClase"&#62;Texto que posee el atributo class con valor "miClase"&#60;/p&#62;</code></pre>
+
+              <p>En css seria punto concatenado con el valor del atributo class -> .miClase</p>
+              <pre><code class="language-css">/* CSS */
+.miClase{
+  color:red;
+}</code></pre>
+
+
+<pre><code><span style="color:black;">RESULTADO</span>
+<p>Texto que no posee el atributo class</p><p style="color:red">Texto que posee el atributo class con valor "miClase"</p></code></pre>
+
+              <br>
+              <h2 id="selector_id" class="subtitle" style="font-weight:bold">Selector de id</h2>
+              <p>Este selector hace referencia a un valor del atributo id en etiquetas html, es unico por lo que se usa para identificas secciones, el valor debe comentar con # concatenado al valor del atributo id.</p>
+              <pre><code class="language-html">&#60;!-- HTML --&#62;
+&#60;div id="miId"&#62;
+  &#60;p&#62;Este texto sera color verde &#60;/p&#62;
+&#60;/div&#62;</code></pre>
+
+              <p>En css seria # concatenado con el valor del atributo class -> #miId</p>
+<pre><code class="language-css">/* CSS */
+#miId{
+  color:green;
+}</code></pre>
+
+
+              <pre><code><span style="color:black;">RESULTADO</span>
+              <div style="color:green"><p>Este texto sera de color verde</p></div></code></pre>
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          <div class="column is-4 is-full-mobile">
+            <div style="position:sticky; top: 75px;">
+              <div class="hero is-white" style="box-shadow: 0 0 1px rgba(0,0,0,.15);padding:1rem;">
+                <b-menu>
+                  <b-menu-list label="Selectores">
+                    <b-menu-item label="Selectores simples" icon="star" tag="a" href="#selectores_simples"></b-menu-item>
+                    <b-menu-item label="Selectores de etiqueta" icon="star" tag="a" href="#selector_etiqueta"></b-menu-item>
+                    <b-menu-item label="Selectores de clase" icon="star" tag="a" href="#selector_clase"></b-menu-item>
+                    <b-menu-item label="Selectores de id" icon="star" tag="a" href="#selector_id"></b-menu-item>
+                  </b-menu-list>
+                </b-menu>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="./dist/js/app.js"></script>
+    <script src="./dist/js/prism.js"></script>
+
+
+  </body>
+</html>

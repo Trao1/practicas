@@ -1,0 +1,26 @@
+html{
+  background: rgba(0,0,0,.05) !important;
+}
+
+.tag:not(.token){
+
+}
+
+.token.tag:not(body) {
+  align-items: center;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  /* color: inherit; */
+  display: inline-flex;
+  font-size: inherit !important;
+  height: inherit !important;
+  justify-content: inherit !important;
+  line-height: inherit !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  white-space: nowrap;
+}
+
+.token.attr-name{
+  padding-left: .75rem !important
+}
