@@ -8,7 +8,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "laravel-mix": "^5.0.4",
